@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function countInterest() {
+            saving = document.getElementById('saving').value;
+            interest = document.getElementById('interest').value;
+            years = document.getElementById('years').value;
+            result = document.getElementById('result');
+            result.innerHTML = (saving * interest * years / 100) + ' Savings balances';
+        }
+    </script>
+
+</head>
+
+<body>
+    Savings: <input id='saving'>
+    <br>
+    <br>
+    Interest: <input id="interest">
+    <br>
+    <br>
+    Years: <input id="years">
+    <br>
+    <br>
+    <button onclick="countInterest()">Count</button>
+    <p id="result"></p>
+</body>
+
+</html>
